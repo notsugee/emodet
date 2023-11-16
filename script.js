@@ -68,7 +68,7 @@ function uploadImage(file) {
     formData.append("file", file);
 
     // Send a POST request to the FastAPI backend
-    fetch('http://localhost:8000/predict', {
+    fetch('https://emodetapi.onrender.com/predict', {
         method: 'POST',
         body: formData
     })
