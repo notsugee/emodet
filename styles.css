@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'meltmino', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Ensure the container takes the full viewport height */
+     /* Hide any overflow to prevent scrolling */
+}
+
+.hero {
+    flex: 1;
+    height: 100vh;
+    background: #d1d1d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.card h1 {
+    font-weight: 1000;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.card img, video {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    width: 100; /* Allow the width to adjust based on the max-width constraint */
+    height: 180px; /* Allow the height to adjust based on the max-height constraint */
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+.btn {
+    display: block;
+    padding: 8px 14px;
+    cursor: pointer;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 0 #fff, 4px 4px 0 0 #000;
+    transition-duration: 200ms;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    box-shadow: 3px 3px 0 0 #fff, 6px 6px 0 0 #000;
+}
+
+.song-list {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    list-style: none;
+}
+
+.song-list li {
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+canvas {
+    display: none;
+}
+
+.imgdiv img {
+    width: 20%;
+    height: 20%;
+    margin-top: 0%;
+    cursor: pointer;
+}
+
+.imgdiv p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
